@@ -100,7 +100,7 @@ class PapersViewer {
 
         container.innerHTML = `
             <div class="table-header">
-                <h2>Papers <span class="paper-count">(${this.filteredData.length} of ${this.allPapersData.length} papers)</span></h2>
+                <h3>Papers <span class="paper-count">(${this.filteredData.length} of ${this.allPapersData.length} papers)</span></h3>
                 
                 <div class="filters">
                     <div class="filter-grid">
