@@ -2,8 +2,8 @@
 html,
 body {
 	font-family: "Open Sans", sans-serif;
-	background-color: #383232;
-	color: #fafafa;
+	background-color: #ffffff;
+	color: #333;
 	margin: 0;
 	padding: 0;
 	font-size: 14px;
@@ -23,7 +23,7 @@ body {
 }
 
 #controls a {
-	color: #fafafa;
+	color: #2c3e50;
 	text-decoration: underline;
 	text-underline-position: under;
 }
@@ -35,30 +35,68 @@ body {
 h1 {
 	font-size: 32px;
 	font-weight: 700;
-	text-shadow: #888 0 0 3px;
+	color: #2c3e50;
 	margin: 0 0 15px 0;
 }
 
 h2 {
 	font-size: 22px;
 	font-weight: 700;
-	color: #ffffff;
+	color: #2c3e50;
 	margin: 0 0 20px 0;
 }
 
 h3 {
 	font-size: 16px;
 	font-weight: 600;
+	color: #2c3e50;
 	margin: 0;
 }
 
 /* Main container */
-#tasks-container {
-	background: white;
+#papers-container {
+	background: #f8f9fa;
 	border-radius: 8px;
 	padding: 25px;
-	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+	border: 1px solid #ecf0f1;
 	color: #333;
+}
+
+/* Sankey diagram */
+.intro-section {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	gap: 30px;
+	margin-bottom: 20px;
+	align-items: start;
+}
+
+.intro-text {
+	padding-right: 10px;
+}
+
+.intro-image {
+	/* No extra styling needed */
+}
+
+.sankey-image {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.instructions {
+	margin-bottom: 30px;
+}
+
+@media (max-width: 900px) {
+	.intro-section {
+		grid-template-columns: 1fr;
+	}
+
+	.intro-text {
+		padding-right: 0;
+	}
 }
 
 .task-count {
