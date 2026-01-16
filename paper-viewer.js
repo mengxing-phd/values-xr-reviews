@@ -102,6 +102,10 @@ class PapersViewer {
             <div class="table-header">
                 <h3>Papers <span class="paper-count">(${this.filteredData.length} of ${this.allPapersData.length} papers)</span></h3>
                 
+            <div class="instructions">
+                <p>Use the <strong>Search All</strong> box to find papers by any keyword, or use the dropdown filters to narrow results by specific categories. The table below will show only papers matching your dropdown selection(s). Click <strong>Clear All Filters</strong> to reset your selection, and use the <strong>PDF</strong> button to download individual papers.</p>
+            </div>
+
                 <div class="filters">
                     <div class="filter-grid">
                         <div class="filter-item">
